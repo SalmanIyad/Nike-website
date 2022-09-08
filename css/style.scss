@@ -1,0 +1,246 @@
+// Start fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// font-family: 'Quicksand', sans-serif;
+// End fonts
+// Start global
+html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior:smooth;
+    background-image: url(../images/main_background.jpg);
+    background-size:100vw 100vh ;
+    background-repeat: no-repeat;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+// End global
+// Start Header
+.nav-header {
+    background-color: transparent;
+    width: 100%;
+    .nav-container {
+        width: 90%;
+        padding: 10px 0;
+        margin: 0 auto;
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60px;
+                .logo-img {
+                    width: 60px;
+                }
+                .logo-word {
+                    width: 40px;
+                }
+            }
+            .right-side {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .nav-list {
+                    display: flex;
+                    gap: 30px;
+                    li {
+                        a {
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        &::after {
+                            content: "";
+                            display: block;
+                            height: 4px;
+                            width: 0px;
+                            background-color:red;
+                            border-radius: 5px;
+                            margin: auto;
+                            transition: 1s;
+                        }
+                        &:hover::after  {
+                            width: 100%;
+                        }
+                        }
+                        
+                    }                    
+                }
+                .cart-img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+// End Header
+// Start contant
+.content-section {
+    .container {
+        .cards {
+            display: flex;
+            justify-content: center;
+            padding-top: 15vh;
+            .main-card {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 55vh;
+                background-color: rgb(30, 30, 30);
+                border-radius: 10px;
+                .back-card {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    .right-part {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 50%;
+                        padding: 20px 30px;
+                        h3 {
+                            color: white;
+                            font-size: 40px;
+                            font-weight: 600;
+                        }
+                        h4 {
+                            color: rgb(180, 0, 0);
+                            font-size: 40px;
+                            font-weight: 600;
+                        }
+                        p {
+                            padding: 10px 0;
+                            padding-right: 20px;
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                        .order-now {
+                            width: 150px;
+                            height: 40px;
+                            background-color: transparent;
+                            border: 2px solid white;
+                            border-radius: 5px;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 400;
+                            padding: 3px 6px;
+                            transition: all 0.5s;
+                            &:hover {
+                                box-shadow: 0 0 7px 2px rgba(255, 255, 255, 0.5), 0 0 2px 1px rgba(255, 255, 255, 0.5) inset;
+                                border: 2px solid rgba(255, 255, 255, 0.6);
+                            }
+                        }
+                    }
+                    .left-part {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20%;
+                        padding: 10px 20px;
+                        h4 {
+                            color: white;
+                            font-size: 17px;
+                            margin-bottom: 10px;
+                        }
+                        .Social_media {
+                            width: 10%;
+                        }
+                        .Social_media a {
+                            display: inline-block;
+                            color: #f0f0f0;
+                            font-size: 23px;
+                            margin: 10px 7px;
+                            transition: all 0.3s;
+                        }
+                        .facebook:hover {
+                            color: #0165E1;
+                            transform: scale(1.5) rotate(-10deg);
+                        }
+                        .instagram:hover {
+                            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transform: scale(1.5) rotate(-10deg);
+                        }
+                        .telegram:hover {
+                            color: #0088CC;
+                            transform: scale(1.5) rotate(-10deg);
+                        }
+                    }
+                }
+                .card-1 {
+                    width: 270px;
+                    height: 500px;
+                    background-color: red;
+                    position: absolute;
+                    left: 13vw;
+                    box-shadow: 0 0 15px 10px red;
+                    border-radius: 3px;
+                    h3 {
+                        padding: 20px 5px;
+                        color: white;
+                        font-size: 45px;
+                        font-weight: 600;
+                        width: 40%;
+                        padding-left: 10px;
+                    }
+                    .shoe-img {
+                        width: 100%;
+                        transition: 0.7s;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    
+                }
+                .card-2 {
+                    width: 150px;
+                    height: 40px;
+                    background-color: red;
+                    box-shadow: 0 0 6px 3px red;
+                    border: red;
+                    border-radius: 3px;
+                    position: absolute;
+                    right: -3vw;
+                    bottom: 6vh;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    transition: all 0.7s;
+                    &:hover {
+                        transform: scale(1.1,1.1);
+                        box-shadow: 0 0 6px 3px red, 0 0 8px 4px rgba(255, 0, 0, 0.5) inset;
+                        background-color: rgba(255, 0, 0, 0.3);
+                    }
+                    i {
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End contant

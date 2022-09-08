@@ -1,0 +1,258 @@
+// Start fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// font-family: 'Quicksand', sans-serif;
+// End fonts
+// Start global
+html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior:smooth;
+    background-color: #ececec;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.beside {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+}
+input {
+    border: 1.5px solid #c2c2c2;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 7px 0;
+    outline: none;
+    &:focus {
+        border: 1px solid #0059ff91; 
+        box-shadow: 0 0 1px 1px #89d0ff98 inset,  0 0 1px 1px #89d0ff98;
+    }
+}
+select {
+    border: 1.5px solid #c2c2c2;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 7px 0;
+    outline: none;
+    &:focus {
+        border: 1px solid #0059ff91; 
+        box-shadow: 0 0 1px 1px #89d0ff98 inset,  0 0 1px 1px #89d0ff98;
+    }
+}
+// End global
+// Start Header
+.nav-header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    .nav-container {
+        width: 90%;
+        padding: 10px 0;
+        margin: 0 auto;
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60px;
+                .logo-img {
+                    width: 60px;
+                }
+                .logo-word {
+                    width: 40px;
+                }
+            }
+            .right-side {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .nav-list {
+                    display: flex;
+                    gap: 30px;
+                    li {
+                        a {
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        &::after {
+                            content: "";
+                            display: block;
+                            height: 4px;
+                            width: 0px;
+                            background-color:red;
+                            border-radius: 5px;
+                            margin: auto;
+                            transition: 1s;
+                        }
+                        &:hover::after  {
+                            width: 100%;
+                        }
+                        }
+                        
+                    }                    
+                }
+                .cart-img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+// End Header
+.content-section {
+    width: 100%;
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Main_card {
+            background-color: #ffffff;
+            box-shadow: 0 0 3px 1px #cecdcd8f;
+            border: 1px solid #d6d6d6d2;
+            border-radius: 6px;
+            padding: 20px 15px;
+            h3 {
+                font-size: 17px;
+                font-weight: 700;
+                color: rgb(32, 32, 32);
+                margin-bottom: 7px;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 600;
+                color: rgb(39, 39, 39);
+                margin-bottom: 15px;
+            }
+            .Inside_card {
+                background-color: #ffffff;
+                box-shadow: 0 0 2px 1px #cecdcd8f;
+                border: 1px solid #d6d6d6d2;
+                border-radius: 6px;
+                padding: 15px;
+                margin: 5px;
+                .Credit_Card_Info {
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        font-size: 13px;
+                    }
+                    .Card_number {
+                        width: 100%;
+                    }
+                    .beside {
+                        gap: 10px;
+                        width: 100%;
+                        .Expires {
+                            width: 100%;
+                            .Expires {
+                                width: 100%;
+                            }
+                        }
+                        .cvv {
+                            width: 100%;
+                            .cvv {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .Billing_address {
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        font-size: 13px;
+                        font-weight: 700;
+                        margin: 10px 0;
+                    }
+                    .beside {
+                        gap: 10px;
+                        width: 100%;
+                        .First_name {
+                            width: 100%;
+                            .Last_name {
+                                width: 100%;
+                            }
+                        }
+                        .Last_name {
+                            width: 100%;
+                            .Last_name {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .Address {
+                        width: 100%;
+                    }
+                    .Apartment {
+                        width: 100%;
+                    }
+                    .beside {
+                        gap: 10px;
+                        width: 100%;
+                        .City {
+                            width: 100%;
+                            .City {
+                                width: 100%;
+                            }
+                        }
+                        .State {
+                            width: 100%;
+                            .State {
+                                width: 100%;
+                            }
+                        }
+                        .ZIP_code {
+                            width: 100%;
+                            .ZIP_code {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .btn {
+                    width: 100%;
+                    height: 50px;
+                    position: relative;
+                    .ACC_btn {
+                        position: absolute;
+                        right: 10px;
+                        bottom: 0;
+                        background-color: #00a156;
+                        color: white;
+                        font-weight: 600;
+                        border: 1.5px solid #00a156;
+                        border-radius: 3px;
+                        padding: 2px 5px;
+                        padding: 6px;
+                        margin: 10px;
+                        outline: none;
+                        cursor: pointer;
+                        transition: all 0.6s;
+                        &:hover {
+                            box-shadow: 0 0 2px 1px #00a156bb, 0 0 1px 1prgba(0, 161, 86, 0.719)56 inset;
+                            background-color: #00a15659;
+                            border: 1.5px solid #00a156cb;
+                            color: rgb(75, 75, 75);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
